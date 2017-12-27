@@ -17,6 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r8S-nl-Aud" userLabel="SIGN IN">
+                            <rect key="frame" x="0.0" y="72" width="375" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.23444498810126482" green="0.70431913860103634" blue="0.24531674434203243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                            <state key="normal" title="SIGN IN">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonPressed:" destination="w0g-YD-sgh" eventType="touchUpInside" id="62g-9l-PUa"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="nVM-lG-GKg">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -32,10 +44,13 @@
                             <outlet property="delegate" destination="w0g-YD-sgh" id="kfz-nD-4RB"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="outletButton" destination="r8S-nl-Aud" id="NCG-OQ-6Uq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWB-jz-m0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="-74"/>
+            <point key="canvasLocation" x="125.59999999999999" y="-74.212893553223395"/>
         </scene>
     </scenes>
 </document>

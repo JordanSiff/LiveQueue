@@ -14,6 +14,10 @@
 		763156AE1FF2BF89000049C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763156AC1FF2BF89000049C6 /* LaunchScreen.storyboard */; };
 		763156B91FF2BF89000049C6 /* LiveQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763156B81FF2BF89000049C6 /* LiveQueueTests.swift */; };
 		763156C41FF2BF8A000049C6 /* LiveQueueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763156C31FF2BF8A000049C6 /* LiveQueueUITests.swift */; };
+		76E6BA461FF4207E002E6790 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6BA431FF4207D002E6790 /* SpotifyAudioPlayback.framework */; };
+		76E6BA471FF4207E002E6790 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6BA441FF4207E002E6790 /* SpotifyAuthentication.framework */; };
+		76E6BA481FF4207E002E6790 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6BA451FF4207E002E6790 /* SpotifyMetadata.framework */; };
+		76E6BA4C1FF420B2002E6790 /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6BA4B1FF420B2002E6790 /* BridgeViewController.m */; };
 		847EC2355CDBB9DA7DE1F28F /* Pods_LiveQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555A50210FD7FBEED467214B /* Pods_LiveQueue.framework */; };
 		863786FE6FF24A602750A249 /* Pods_LiveQueueUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786CC5E620A33C7688798FA /* Pods_LiveQueueUITests.framework */; };
 		C3762471A335CC6854F44ADE /* Pods_LiveQueueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC0EA7141F6EDB2ADF57489 /* Pods_LiveQueueTests.framework */; };
@@ -53,6 +57,12 @@
 		763156BF1FF2BF8A000049C6 /* LiveQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		763156C31FF2BF8A000049C6 /* LiveQueueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveQueueUITests.swift; sourceTree = "<group>"; };
 		763156C51FF2BF8A000049C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E6BA431FF4207D002E6790 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		76E6BA441FF4207E002E6790 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		76E6BA451FF4207E002E6790 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		76E6BA491FF420B2002E6790 /* LiveQueue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveQueue-Bridging-Header.h"; sourceTree = "<group>"; };
+		76E6BA4A1FF420B2002E6790 /* BridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		76E6BA4B1FF420B2002E6790 /* BridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
 		7786CC5E620A33C7688798FA /* Pods_LiveQueueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveQueueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC0EA7141F6EDB2ADF57489 /* Pods_LiveQueueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveQueueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72B463DBB8B782D98908134 /* Pods-LiveQueue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveQueue.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveQueue/Pods-LiveQueue.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E6BA481FF4207E002E6790 /* SpotifyMetadata.framework in Frameworks */,
 				847EC2355CDBB9DA7DE1F28F /* Pods_LiveQueue.framework in Frameworks */,
+				76E6BA471FF4207E002E6790 /* SpotifyAuthentication.framework in Frameworks */,
+				76E6BA461FF4207E002E6790 /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +127,18 @@
 		763156A21FF2BF89000049C6 /* LiveQueue */ = {
 			isa = PBXGroup;
 			children = (
+				76E6BA431FF4207D002E6790 /* SpotifyAudioPlayback.framework */,
+				76E6BA441FF4207E002E6790 /* SpotifyAuthentication.framework */,
+				76E6BA451FF4207E002E6790 /* SpotifyMetadata.framework */,
 				763156A31FF2BF89000049C6 /* AppDelegate.swift */,
 				763156A51FF2BF89000049C6 /* ViewController.swift */,
 				763156A71FF2BF89000049C6 /* Main.storyboard */,
 				763156AA1FF2BF89000049C6 /* Assets.xcassets */,
 				763156AC1FF2BF89000049C6 /* LaunchScreen.storyboard */,
 				763156AF1FF2BF89000049C6 /* Info.plist */,
+				76E6BA4A1FF420B2002E6790 /* BridgeViewController.h */,
+				76E6BA4B1FF420B2002E6790 /* BridgeViewController.m */,
+				76E6BA491FF420B2002E6790 /* LiveQueue-Bridging-Header.h */,
 			);
 			path = LiveQueue;
 			sourceTree = "<group>";
@@ -242,6 +261,7 @@
 				TargetAttributes = {
 					7631569F1FF2BF89000049C6 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					763156B31FF2BF89000049C6 = {
@@ -458,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E6BA4C1FF420B2002E6790 /* BridgeViewController.m in Sources */,
 				763156A61FF2BF89000049C6 /* ViewController.swift in Sources */,
 				763156A41FF2BF89000049C6 /* AppDelegate.swift in Sources */,
 			);
@@ -626,11 +647,19 @@
 			baseConfigurationReference = BC944EB6CA9EB16F41899E4E /* Pods-LiveQueue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LiveQueue",
+				);
 				INFOPLIST_FILE = LiveQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JordanSiff.LiveQueue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveQueue/LiveQueue-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -641,11 +670,18 @@
 			baseConfigurationReference = A72B463DBB8B782D98908134 /* Pods-LiveQueue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LiveQueue",
+				);
 				INFOPLIST_FILE = LiveQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JordanSiff.LiveQueue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveQueue/LiveQueue-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
